@@ -66,12 +66,33 @@ p {
   background-color: rgba(255, 69, 0, 0.7);
 }
 
+.topnav{
+  position: absolute;
+  float: inline-start;
+  
+ }
+ a{
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0;
+  float:inline-start;
+  color:white;
+
+ }
+        .topnav a:hover{
+          position: absolute;
+             background-color:red;
+             color: aqua;
+        }
+
   </style>
 </head>
 <body>
-  <div class="video-background">
+ <div class="video-background">
     <video autoplay muted loop id="background-video">
-      <source src="restaurant.mp4">
+      <source src="restaurant.mp4" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
   </div>
   <div class="content">
@@ -79,5 +100,12 @@ p {
     <p>Experience the finest culinary adventures.</p>
     <a href="#menu" class="btn">Explore Menu</a>
   </div>
+<div class="topnav">
+  <a href="#"><b>HOME</b></a>
+  <a href="#"><b>MENU</b></a>
+  <a href="#"><b>signup</b></a>
+  <a href="#"><b>contact</b></a>
+  
+</div>
 </body>
 </html>
